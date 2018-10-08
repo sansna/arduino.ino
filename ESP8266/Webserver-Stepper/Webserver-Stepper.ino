@@ -55,15 +55,11 @@ void setup(void) {
   pinMode(D2, OUTPUT);
   pinMode(D3, OUTPUT);
   pinMode(D4, OUTPUT);
-  pinMode(D5, OUTPUT);
-  pinMode(D6, OUTPUT);
   digitalWrite(led, 0);
   digitalWrite(D1, LOW); //init
   digitalWrite(D2, LOW);
   digitalWrite(D3, LOW);
   digitalWrite(D4, LOW);
-  digitalWrite(D5, HIGH); //power
-  digitalWrite(D6, LOW);  //gnd
   Serial.begin(115200);
   WiFi.mode(WIFI_STA);
   WiFi.begin(ssid, password);
